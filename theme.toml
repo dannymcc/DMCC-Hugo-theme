@@ -1,8 +1,8 @@
 name = "DMCC"
 license = "MIT"
-licenselink = "https://github.com/yourusername/hugo-theme-dmcc/blob/main/LICENSE"
+licenselink = "https://github.com/dannymcc/DMCC-Hugo-theme/blob/main/LICENSE.md"
 description = "A minimal, elegant Hugo theme with blue accents and featured posts"
-homepage = "https://github.com/yourusername/hugo-theme-dmcc"
+homepage = "https://github.com/dannymcc/DMCC-Hugo-theme"
 tags = ["blog", "minimal", "clean", "responsive", "blue", "featured-posts"]
 features = ["responsive", "featured-posts", "callouts", "navigation", "rss"]
 min_version = "0.121.1"

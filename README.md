@@ -2,6 +2,12 @@
 
 A minimal, elegant Hugo theme featuring clean design with subtle blue accents and advanced content management features.
 
+![Theme Screenshot](https://raw.githubusercontent.com/dannymcc/DMCC-Hugo-theme/main/images/screenshot.png)
+
+## Demo
+
+See the theme in action at [blog.dmcc.io](https://blog.dmcc.io)
+
 ## Features
 
 - Clean, minimal design with professional typography
@@ -11,14 +17,13 @@ A minimal, elegant Hugo theme featuring clean design with subtle blue accents an
 - Responsive design for all devices
 - Subtle blue color scheme
 - RSS feed support
-- Privacy-focused analytics ready
 
 ## Installation
 
 ### As Git Submodule (Recommended)
 
 ```bash
-git submodule add https://github.com/dannymcc/dmcc-hugo-theme.git themes/dmcc
+git submodule add https://github.com/dannymcc/DMCC-Hugo-theme.git themes/dmcc
 ```
 
 ### Manual Download
