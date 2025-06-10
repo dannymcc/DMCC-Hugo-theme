@@ -18,7 +18,7 @@ A minimal, elegant Hugo theme featuring clean design with subtle blue accents an
 ### As Git Submodule (Recommended)
 
 ```bash
-git submodule add https://github.com/yourusername/hugo-theme-dmcc.git themes/dmcc
+git submodule add https://github.com/dannymcc/dmcc-hugo-theme.git themes/dmcc
 ```
 
 ### Manual Download
