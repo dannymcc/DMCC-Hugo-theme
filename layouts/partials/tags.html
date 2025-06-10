@@ -1,0 +1,7 @@
+<div class="tags">
+  <ul>
+    {{ range .Params.tag }}
+      <li><a href="{{ "/tag/" | relLangURL }}{{ . | urlize }}" title="View posts with tag">#{{ . }}</a> </li>
+    {{ end }}
+  </ul>
+</div>

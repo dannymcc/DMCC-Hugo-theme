@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+  <main class="single-post">
+    <article>
+      <header>
+        <h1>{{ .Title }}</h1>
+        <div class="subheader">
+          <time title="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+          <span>・{{ math.Round (div (countwords .Content) 220.0) }} min read</span>
+          {{ if .Params.featured }}<span class="featured-tag">FEATURED</span>{{ end }}
+        </div>
+      </header>
+      <section>
+        {{ .Content }}
+      </section>
+      {{ partial "tags.html" . }}
+    </article>
+    {{ if ne .Title "Privacy" }}
+      {{ partial "post-nav.html" . }}
+      {{ partial "subscribe.html" . }}
+      {{ partial "related.html" . }}
+      {{ partial "search.html" . }}
+    {{ end }}
+  </main>
+{{ partial "footer.html" . }}

@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+<main>
+  <div class="site-title">
+    <h1>{{ .Site.Title }}</h1>
+    <p class="site-description">{{ .Site.Params.description }}</p>
+  </div>
+
+  {{ $allPosts := where (where .Site.Pages "Type" "post") ".Title" "!=" "Posts" }}
+  {{ $featuredPosts := where $allPosts ".Params.featured" true }}
+
+  {{ if $featuredPosts }}
+  <section class="featured-posts">
+    <div class="featured-grid">
+      {{ range $featuredPosts }}
+        {{ partial "featured-summary.html" . }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="recent-posts">
+    {{ $paginator := .Paginate $allPosts 5 }}
+    {{ range $paginator.Pages }}
+        {{ partial "summary.html" . }}
+    {{ end }}
+    {{ partial "pagination.html" . }}
+  </section>
+</main>
+{{ partial "footer.html" . }}

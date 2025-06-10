@@ -1,0 +1,11 @@
+<a href="{{ .Permalink }}" class="featured-article-link">
+  <article class="featured-article">
+    <header>
+      <h1>{{ .Title }}</h1>
+      <div class="subheader">
+        <time title="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+        <span>・{{ math.Round (div (countwords .Content) 220.0) }} min read</span>
+      </div>
+    </header>
+  </article>
+</a> 

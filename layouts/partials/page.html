@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+  <main>
+    <article>
+      <header>
+        <h1>{{ .Title }}</h1>
+      </header>
+      <section>
+        {{ .Content | safeHTML }}
+      </section>
+    </article>
+  </main>
+{{ partial "footer.html" . }}

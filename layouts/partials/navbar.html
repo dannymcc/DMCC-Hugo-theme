@@ -1,0 +1,11 @@
+<header class="site-header">
+  <hgroup>
+    <nav>
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}"{{ if eq .Name "Github" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </hgroup>
+</header>
